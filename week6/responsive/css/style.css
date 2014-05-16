@@ -1,0 +1,101 @@
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+ul {
+     padding: 0;
+     margin: 0;
+}
+
+/*General*/
+#container{
+     width: 90%;
+     margin: 0 auto;
+}
+
+/*Navigation*/
+nav{
+     height: 60px;
+}
+nav li{
+     width: 15%;
+     height: 40px;
+     float: left;
+     margin: 10px;
+     background-color: blue;
+}
+
+nav li:first-child{
+     float: right;
+    /* display: none;*/
+}
+
+.line {
+     height: 7px;
+     width: 60%;
+     margin: 5px auto;
+     border-radius: 5px;
+     background-color: black;
+}
+
+#hero {
+     height: 400px;
+     margin: 20px 0;
+     background-color: yellow;
+}
+
+#info-boxes div, footer div {
+     height: 200px;
+     float: left;
+     margin: 10px 1%;
+     border: 1px solid black;
+}
+
+#info-boxes div {
+     width: 20%;
+}
+
+footer div {
+     width: 30%;
+}
+
+@media screen and (max-width: 768px){
+     /*Navigation*/
+     nav li{
+          display:none;
+     }
+     nav li:first-child{
+          display:block;
+          width: 30%;
+     }
+
+     #info-boxes div {
+          float: none;
+          width: 100%;
+     }
+}
+
+@media screen and (max-width: 320px){
+     /*apply these styles if the screen is at a maximum of 320 px*/
+     
+}
+
+
+

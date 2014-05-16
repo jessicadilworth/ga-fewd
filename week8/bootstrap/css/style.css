@@ -1,0 +1,23 @@
+body {
+	padding-top: 70px;
+}
+
+section{
+	padding: 70px;
+}
+
+.bg-blue {
+	background: blue;
+}
+
+.bg-yellow {
+	background: yellow;
+}
+
+.bg-orange {
+	background: orange;
+}
+
+.bg-purple {
+	background: purple;
+}
